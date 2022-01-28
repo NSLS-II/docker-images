@@ -1,7 +1,7 @@
 ARG CENTOS_VER
 FROM centos:${CENTOS_VER}
 
-LABEL maintainer="conda-forge <conda-forge@googlegroups.com>"
+LABEL maintainer="Maksim Rakitin <mrakitin@bnl.gov>"
 
 ARG CENTOS_VER
 ENV CENTOS_VER=${CENTOS_VER}
