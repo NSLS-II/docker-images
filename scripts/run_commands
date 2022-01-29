@@ -57,6 +57,6 @@ echo "tini ${CONDA_TINI_INFO[1]}" >> /opt/conda/conda-meta/pinned
 conda clean -tipy
 
 # Lucky group gets permission to write in the conda dir
-groupadd -g 32766 lucky
-chown -R $USER /opt/conda
-chgrp -R lucky /opt/conda && chmod -R g=u /opt/conda
+groupadd -g 1000 nsls2
+chown -R ${USER} /opt/conda
+chgrp -R nsls2 /opt/conda && chmod -R g=u /opt/conda
